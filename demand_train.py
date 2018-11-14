@@ -69,5 +69,5 @@ class DemandTrain:
         pickle.dump(regressor_available, open("free_vehicles_ML_model.sav", 'wb'))
 
     def demand_predict(self, year, month, day, hour, pickupzone, avg_no_vehicle_7_days):
-        regressor=self.train()
-        return regressor.predict([[year,month,day,hour,pickupzone,avg_no_vehicle_7_days]])
+        # return regressor.predict([[year,month,day,hour,pickupzone,avg_no_vehicle_7_days]])
+        pass
